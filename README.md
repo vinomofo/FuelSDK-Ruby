@@ -23,7 +23,7 @@ Subscriber can be accessed using FuelSDK::Subscriber or ET_Subscriber.
 
 ## Requirements ##
 - Ruby Version 1.9.3
-- Savon 2.2.0 
+- SOAPClient 2.2.0 
 
 ## Getting Started ##
 Build the gem from the source

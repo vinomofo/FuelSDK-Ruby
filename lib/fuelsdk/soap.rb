@@ -34,9 +34,9 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWIS
 USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 =end
 
-require 'savon'
+require "soap_client"
 module FuelSDK
-	
+
 	class SoapResponse < FuelSDK::Response
 
 		def continue
@@ -136,7 +136,7 @@ module FuelSDK
 
 		def soap_client
 			self.refresh
-			@soap_client = Savon.client(
+			@soap_client = SOAPClient.client(
 				soap_header: header,
 				wsdl: wsdl,
 				endpoint: endpoint,
